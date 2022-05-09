@@ -94,13 +94,31 @@
     });
 </script>
 
-<!--Apunta a un hijo específico de un elemento usando jQuery *target:nth-child(n) permite seleccionar todos los enésimos elementos con el tipo de elemento o la clase apuntada...-->
+<!--Apunta a un hijo específico de un elemento usando jQuery *nth-child(n) permite seleccionar todos los enésimos elementos con el tipo de elemento o la clase apuntada...-->
 
 <script>
     $(document).ready(function() {
         $(".target:nth-child(3)").addClass("animated bounce");
     });
 </script>
+
+<!--Apunta a elementos pares utilizando jQuery *:odd o :even apunta a elementos basado en sus posiciones, usando los selectores :odd (pares) o :even (impares)...-->
+
+<script>
+    $(document).ready(function() {
+        $(".target:odd").addClass("animated shake");
+    });
+</script>
+
+<!--Usa jQuery para modificar la página completa.-->
+
+<script>
+    $(document).ready(function() {
+        $("body").addClass("animated fadeOut");
+    });
+</script>
+
+
 
 
 
