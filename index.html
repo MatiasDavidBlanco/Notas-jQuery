@@ -1,0 +1,65 @@
+<!-- Apuntar a elementos por su tipo $("button")-->
+<!-- Apuntar a elementos por su clase $(".btn")-->
+<!-- Apuntar a elementos por su atributo id $("#target1") -->
+
+<script>
+    $(document).ready(function() {
+        $("button").addClass("animated bounce"); 
+        $(".well").addClass("animated shake");
+        $("#target3").addClass("animated fadeOut");
+  
+    });
+</script>
+
+
+<!--Apunta al mismo elemento con múltiples selectores jQuery-->
+
+<script>
+    $(document).ready(function() {
+      $("button").addClass("animated"); 
+      $(".btn").addClass("shake"); 
+      $("#target1").addClass("btn-primary"); 
+    });
+</script>
+
+<!--Elimina clases de un elemento con jQuery-->
+
+<script>
+    $(document).ready(function() {
+        $("#target2").removeClass("btn-default"); 
+    });
+</script>
+
+<!--Cambia el CSS de un elemento usando jQuery-->
+
+<script>
+    $(document).ready(function() {
+        $("#target1").css("color", "blue");
+    });
+</script>
+
+<!--Deshabilita un elemento usando jQuery *.prop() permite AJUSTAR las propiedades de un elemento HTML-->
+
+<script>
+    $(document).ready(function() {
+        $("#target1").css("color", "blue");
+    });
+</script>
+
+<!--Cambia el texto dentro de un elemento usando jQuery *.html() permite agregar etiquetas HTML y texto dentro de un elemento-->
+
+<script>
+    $(document).ready(function() {
+        $("h3").html("<em>jQuery Playground</em>");
+    });
+</script>
+
+<!--Remueve un elemento usando jQuery *.remove() eliminará completamente un elemento HTML-->
+
+<script>
+    $(document).ready(function() {
+        $("#target4").remove();
+    });
+</script>
+
+
