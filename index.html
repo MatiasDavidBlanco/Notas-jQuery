@@ -62,4 +62,29 @@
     });
 </script>
 
+<!--Mover un elemento hacia otro lugar del HTML usando jQuery *.appendTo() te permite seleccionar elementos HTML y agregarlos a otro elemento.-->
+
+<script>
+    $(document).ready(function() {
+        $("#target4").appendTo("#left-well");
+    });
+</script>
+
+<!--Clonar un elemento y moverlo usando jQuery *.clone() hace una copia de un elemento.-->
+
+<script>
+    $(document).ready(function() {
+        $("#target2").clone().appendTo("#right-well");
+    });
+</script>
+
+<!--Apunta al padre de un elemento usando jQuery *.parent() permite acceder al padre del elemento que hayas seleccionado..-->
+
+<script>
+    $(document).ready(function() {
+        $("#left-well").parent().css("background-color", "blue")
+    });
+</script>
+
+
 
