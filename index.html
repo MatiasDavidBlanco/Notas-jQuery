@@ -86,5 +86,21 @@
     });
 </script>
 
+<!--Apunta al hijo de un elemento usando jQuery *.children() permite acceder a los hijos del elemento que hayas seleccionado..-->
+
+<script>
+    $(document).ready(function() {
+        $("#left-well").children().css("color", "blue")    
+    });
+</script>
+
+<!--Apunta a un hijo específico de un elemento usando jQuery *target:nth-child(n) permite seleccionar todos los enésimos elementos con el tipo de elemento o la clase apuntada...-->
+
+<script>
+    $(document).ready(function() {
+        $(".target:nth-child(3)").addClass("animated bounce");
+    });
+</script>
+
 
 
